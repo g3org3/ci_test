@@ -1,0 +1,22 @@
+{
+  "name": "ci_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/g3org3/ci_test.git"
+  },
+  "author": "",
+  "license": " ",
+  "bugs": {
+    "url": "https://github.com/g3org3/ci_test/issues"
+  },
+  "homepage": "https://github.com/g3org3/ci_test",
+  "dependencies": {
+    "mocha": "^2.2.5"
+  }
+}
