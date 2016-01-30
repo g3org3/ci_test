@@ -1,0 +1,21 @@
+image: node0.10
+
+cache:
+  - /tmp/npm
+
+script:
+  - mkdir -p /tmp/npm
+  - sudo chown -R ubuntu:ubuntu /tmp/npm
+  - npm config set cache /tmp/npm
+  - npm -s install
+  - npm test
+
+notify:
+  slack:
+    team: innonet
+    channel: #general
+    username: drone.io
+    token: du74qreFyFfwOBAxpN80z
+    on_started: true
+    on_failure: true
+    on_success: true
