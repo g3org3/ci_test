@@ -1,5 +1,5 @@
-image: g3org3/lights-status
-
+image: g3org3/node:0.12.7
 script:
-  - echo "hello"
+  - npm install
+  - npm test
 
