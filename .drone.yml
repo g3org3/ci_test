@@ -1,5 +1,6 @@
 image: g3org3/node:0.12.7
 script:
+  - pwd
   - npm install
   - npm test
 
