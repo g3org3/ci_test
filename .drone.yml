@@ -1,7 +1,5 @@
-image: node0.10
+image: g3org3/node
 script:
-  - mkdir -p /tmp/npm
-  - sudo chown -R ubuntu:ubuntu /tmp/npm
-  - npm config set cache /tmp/npm
-  - npm -s install
+  - pwd
+  - npm install 
   - npm test
